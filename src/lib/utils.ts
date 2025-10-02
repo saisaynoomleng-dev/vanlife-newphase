@@ -8,3 +8,10 @@ export function cn(...inputs: ClassValue[]) {
 export const copyrightDate = () => {
     return new Date().getFullYear();
 };
+
+export const formatCurrency = (currency: number) => {
+    return new Intl.NumberFormat("en-US", {
+        style: "currency",
+        currency: "USD",
+    }).format(currency);
+};

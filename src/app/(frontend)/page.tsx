@@ -7,7 +7,13 @@ export default function Home() {
     return (
         <Bounded className="relative">
             <div className="absolute z-0">
-                <Image src="/home-hero.png" alt="" width={760} height={1200} />
+                <Image
+                    src="/home-hero.png"
+                    alt=""
+                    width={760}
+                    height={1200}
+                    className="min-w-screen"
+                />
             </div>
 
             <div className="relative bg-brand-black-100/50 z-50" />
